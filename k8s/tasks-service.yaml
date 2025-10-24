@@ -1,0 +1,30 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: tasks
+  labels:
+    app: tasks
+spec:
+  selector:
+    app: tasks
+  ports:
+    - name: http           # ← important
+      port: 5000
+      targetPort: 5000
+  type: ClusterIP
+
+
+# Optional LoadBalancer for external access
+apiVersion: v1
+kind: Service
+metadata:
+  name: tasks-loadbalancer
+spec:
+  selector:
+    app: tasks
+  ports:
+    - name: http          # ← add name here too
+      protocol: TCP
+      port: 80
+      targetPort: 5000
+  type: LoadBalancer

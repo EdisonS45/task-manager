@@ -1,0 +1,21 @@
+name: Build and Deploy
+on:
+  push:
+    branches: [ main ]
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Log in to ECR
+        uses: aws-actions/amazon-ecr-login@v1
+      - name: Build and push tasks
+        run: |
+          docker build -t ${{ env.ECR_REGISTRY }}/tasks:latest ./tasks-service
+          docker push ${{ env.ECR_REGISTRY }}/tasks:latest
+        env:
+          ECR_REGISTRY: ${{ secrets.ECR_REGISTRY }}
+      - name: Update k8s
+        uses: appleboy/ssh-action@v0.1.9
+        with:
+          host: ${{ secrets.BASTION_HOST }} # or instead use kubectl action
