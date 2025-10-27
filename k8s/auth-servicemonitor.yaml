@@ -6,6 +6,8 @@ metadata:
   labels:
     release: monitoring
 spec:
+  namespaceSelector:
+    any: true
   selector:
     matchLabels:
       app: auth

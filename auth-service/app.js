@@ -1,14 +1,22 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const { MongoClient } = require('mongodb');
-const client = new MongoClient(process.env.MONGO_URI || 'mongodb://mongo:27017');
+const client = require('prom-client');
+const mongoclient = new MongoClient(process.env.MONGO_URI || 'mongodb://mongo:27017');
 const app = express();
 app.use(bodyParser.json());
 
 let users;
 
-client.connect().then(() => {
-  users = client.db('taskdb').collection('users');
+mongoclient.connect().then(() => {
+  users = mongoclient.db('taskdb').collection('users');
+});
+const collectDefaultMetrics = client.collectDefaultMetrics;
+collectDefaultMetrics();
+
+app.get('/metrics', async (req, res) => {
+  res.set('Content-Type', client.register.contentType);
+  res.end(await client.register.metrics());
 });
 
 app.post('/signup', async (req, res) => {
