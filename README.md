@@ -156,10 +156,3 @@ kubectl port-forward svc/grafana 3000:3000 -n monitoring
 
 ---
 
-## 🏁 Future Improvements
-
-* Add API Gateway for unified routing
-* Enable distributed tracing (Jaeger or OpenTelemetry)
-* Implement CI/CD automation with GitHub Actions
-
----
