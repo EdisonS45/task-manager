@@ -27,10 +27,13 @@ Below are snapshots of how metrics and dashboards appear in **Prometheus** and *
 
 ### 🔥 Prometheus Metrics  
 ![Prometheus Dashboard](./assets/prometheus-dashboard1.JPG)
+![Prometheus Dashboard2](./assets/prometheus-dashboard2.JPG)
 <!-- Add Screenshot Here (Prometheus Screenshot 1) -->
 <!-- Add Screenshot Here (Prometheus Screenshot 2) -->
 
 ### 📊 Grafana Dashboards  
+![Prometheus Dashboard](./assets/grafana-dashboard1.JPG)
+![Prometheus Dashboard](./assets/grafana-dashboard2.JPG)
 <!-- Add Screenshot Here (Grafana Screenshot 1) -->
 <!-- Add Screenshot Here (Grafana Screenshot 2) -->
 
