@@ -34,7 +34,20 @@ Below are snapshots of how metrics and dashboards appear in **Prometheus** and *
 ### 📊 Grafana Dashboards  
 ![Prometheus Dashboard](./assets/grafana-visualization1.JPG)
 ![Prometheus Dashboard](./assets/grafana-visualization2.JPG)
+---
 
+## 🧠 Highlights
+
+✅ Microservices architecture (Node.js + Python)
+🐳 Fully containerized using Docker
+☸️ Scalable Kubernetes (EKS) deployment
+💾 MongoDB persistent storage
+📈 Real-time metrics via Prometheus
+📊 Dashboards with Grafana
+🧩 Tracing through OpenTelemetry
+🚨 Optional alerting via Alertmanager
+
+---
 ---
 
 ## 🗂️ Project Structure
@@ -194,21 +207,6 @@ http_requests_total
 ```
 
 You’ll see the count increase after each request — confirming that **metrics are live!**
-
----
-
-## 🧠 Highlights
-
-✅ Microservices architecture (Node.js + Python)
-🐳 Fully containerized using Docker
-☸️ Scalable Kubernetes (EKS) deployment
-💾 MongoDB persistent storage
-📈 Real-time metrics via Prometheus
-📊 Dashboards with Grafana
-🧩 Tracing through OpenTelemetry
-🚨 Optional alerting via Alertmanager
-
----
 
 ## 🏁 Conclusion
 
