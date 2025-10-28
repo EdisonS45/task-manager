@@ -48,7 +48,6 @@ Below are snapshots of how metrics and dashboards appear in **Prometheus** and *
 🚨 Optional alerting via Alertmanager
 
 ---
----
 
 ## 🗂️ Project Structure
 
