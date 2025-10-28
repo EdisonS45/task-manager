@@ -213,3 +213,4 @@ This project demonstrates how to build, deploy, and monitor a **production-grade
 It’s a perfect example of combining **DevOps + Monitoring + Cloud-native** design principles.
 
 ✍️ *Built with ❤️ using Node.js, Python, Kubernetes, Prometheus, Grafana & OpenTelemetry.*
+---
