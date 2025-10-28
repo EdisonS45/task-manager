@@ -27,25 +27,12 @@ Below are snapshots of how metrics and dashboards appear in **Prometheus** and *
 
 ### 🔥 Prometheus Metrics  
 ![Prometheus Dashboard](./assets/prometheus-dashboard1.JPG)
-![Prometheus Dashboard](./assets/prometheus-dashboard2.JPG)
 <!-- Add Screenshot Here (Prometheus Screenshot 1) -->
 <!-- Add Screenshot Here (Prometheus Screenshot 2) -->
 
 ### 📊 Grafana Dashboards  
-![Prometheus Dashboard](./assets/grafana-visualization1.JPG)
-![Prometheus Dashboard](./assets/grafana-visualization2.JPG)
----
-
-## 🧠 Highlights
-
-✅ Microservices architecture (Node.js + Python)
-🐳 Fully containerized using Docker
-☸️ Scalable Kubernetes (EKS) deployment
-💾 MongoDB persistent storage
-📈 Real-time metrics via Prometheus
-📊 Dashboards with Grafana
-🧩 Tracing through OpenTelemetry
-🚨 Optional alerting via Alertmanager
+<!-- Add Screenshot Here (Grafana Screenshot 1) -->
+<!-- Add Screenshot Here (Grafana Screenshot 2) -->
 
 ---
 
@@ -206,11 +193,25 @@ http_requests_total
 ```
 
 You’ll see the count increase after each request — confirming that **metrics are live!**
+
 ---
+
+## 🧠 Highlights
+
+✅ Microservices architecture (Node.js + Python)
+🐳 Fully containerized using Docker
+☸️ Scalable Kubernetes (EKS) deployment
+💾 MongoDB persistent storage
+📈 Real-time metrics via Prometheus
+📊 Dashboards with Grafana
+🧩 Tracing through OpenTelemetry
+🚨 Optional alerting via Alertmanager
+
+---
+
 ## 🏁 Conclusion
 
 This project demonstrates how to build, deploy, and monitor a **production-grade microservices system** with **modern observability tools**.
 It’s a perfect example of combining **DevOps + Monitoring + Cloud-native** design principles.
 
 ✍️ *Built with ❤️ using Node.js, Python, Kubernetes, Prometheus, Grafana & OpenTelemetry.*
----
