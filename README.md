@@ -27,7 +27,7 @@ Below are snapshots of how metrics and dashboards appear in **Prometheus** and *
 
 ### 🔥 Prometheus Metrics  
 ![Prometheus Dashboard](./assets/prometheus-dashboard1.JPG)
-![Prometheus Dashboard](./assets/prometheus-dashboard12.JPG)
+![Prometheus Dashboard](./assets/prometheus-dashboard2.JPG)
 <!-- Add Screenshot Here (Prometheus Screenshot 1) -->
 <!-- Add Screenshot Here (Prometheus Screenshot 2) -->
 
