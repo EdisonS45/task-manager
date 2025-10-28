@@ -13,9 +13,9 @@ let users;
 mongoClient.connect()
   .then(() => {
     users = mongoClient.db('taskdb').collection('users');
-    console.log('✅ Connected to MongoDB');
+    console.log('Connected to MongoDB');
   })
-  .catch(err => console.error('❌ MongoDB Connection Error:', err));
+  .catch(err => console.error(' MongoDB Connection Error:', err));
 
 
 const collectDefaultMetrics = client.collectDefaultMetrics;
@@ -56,7 +56,7 @@ app.post('/signup', async (req, res) => {
     signupCounter.inc(); 
     res.status(201).json({ msg: 'User created successfully' });
   } catch (err) {
-    console.error('❌ Error in /signup:', err);
+    console.error(' Error in /signup:', err);
     res.status(500).json({ error: err.message });
   }
 });
@@ -66,5 +66,5 @@ app.get('/', (req, res) => {
 });
 
 app.listen(3000, '0.0.0.0', () => {
-  console.log('✅ Auth Service running on port 3000');
+  console.log(' Auth Service running on port 3000');
 });
