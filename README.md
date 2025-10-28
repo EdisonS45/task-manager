@@ -206,7 +206,7 @@ http_requests_total
 ```
 
 You’ll see the count increase after each request — confirming that **metrics are live!**
-
+---
 ## 🏁 Conclusion
 
 This project demonstrates how to build, deploy, and monitor a **production-grade microservices system** with **modern observability tools**.
