@@ -4,10 +4,11 @@ metadata:
   name: auth-servicemonitor
   namespace: monitoring
   labels:
-    release: monitoring
+    release: monitoring        # 👈 must match Prometheus Helm release name
 spec:
   namespaceSelector:
-    any: true
+    matchNames:
+      - default                # 👈 scrape Services from the default namespace
   selector:
     matchLabels:
       app: auth
